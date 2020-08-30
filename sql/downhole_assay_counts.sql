@@ -66,7 +66,7 @@ WHERE	len(ga.AttributeColumn) < 30
 		and d.GeoChemistryUOM in ('ppm', 'ppb', 'ppt', 'pct',  'GPT')	-- concentration units	
 
 
--- geochem assays with mathched anlayte --   331,073,963  (94% of 'geochem' records)  -- 10 mins!!
+-- geochem assays with matched anlayte --   331,073,963  (94% of 'geochem' records)  -- 10 mins!!
 SELECT	count(*) 
 		--count (distinct sa.SurfaceSampleId)	-- number of sample sites with geochem assays	-- 7,612,048 ca. 1M less than samples with atrrib data !!!!
 FROM	[DRILLHOLES].[dbo].[DHGeochemistryAttr] ga
